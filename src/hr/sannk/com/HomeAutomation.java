@@ -17,10 +17,11 @@ public static void main(String[] args) {
 	EventQueue.invokeLater(new Runnable() {
 		public void run() {
 			HomeAutomation frame = new HomeAutomation();
-			frame.setResizable(false);
-			frame.setUndecorated(true);
-			Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
-			frame.setSize(dim);
+			frame.setResizable(true);
+//			frame.setResizable(false);
+//			frame.setUndecorated(true);
+//			Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+//			frame.setSize(dim);
 			frame.setVisible(true);
 		}
 	});
@@ -28,7 +29,7 @@ public static void main(String[] args) {
 
 public HomeAutomation() {
 	setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-//	setBounds(300, 300, 450, 300);
+	setBounds(300, 300, 450, 300);
     JPanel panel = new JPanel(new MigLayout());
     JButton but1 = new JButton();
     JButton but2 = new JButton();
