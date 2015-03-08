@@ -1,5 +1,4 @@
 package hr.sannk.com;
-
 import java.awt.Dimension;
 import java.awt.EventQueue;
 import java.awt.Toolkit;
